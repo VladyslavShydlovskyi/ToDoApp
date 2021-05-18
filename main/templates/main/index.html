@@ -1,0 +1,16 @@
+{% extends 'main/base.html'  %}
+
+{% block title %}
+ToDoApp
+{% endblock %}
+
+
+{% block content %}
+    <h1>Hello!!!</h1>
+    {% for x in tasks %}
+        <div class = "alert alert-warning mt-2">
+        <h3>{{ x.title  }}</h3>
+        <p>{{ x.task }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
